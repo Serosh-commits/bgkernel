@@ -1,0 +1,10 @@
+extern "C" void kmain(void) {
+    Console::init();
+    GDT::init();
+    IDT::init();
+    Keyboard::init();
+    Memory::init();
+
+    Console::printf("Welcome to wired v0.1\n");
+    Shell::run();
+}
